@@ -1,0 +1,30 @@
+.button {
+  background-color: transparent;
+  border: 1.4px solid white;
+  color: white;
+  padding: 0.7rem;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__big {
+    width: 15rem;
+  }
+  &__small {
+    width: 8rem;
+  }
+
+  &:hover {
+    background-color: #c5bdbd8c;
+    border: none;
+    cursor: pointer;
+  }
+}
+.pink {
+  border: 1.4px solid $important-text-color;
+  color: black;
+}

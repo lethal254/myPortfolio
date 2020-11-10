@@ -1,0 +1,85 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  z-index: 2;
+  background: $dark-bg-color;
+  height: 8vh;
+  align-items: center;
+  border-bottom: 2px solid $light-bg-color;
+
+  &-links {
+    margin-left: 1.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      color: white;
+      font-size: 1.1rem;
+      margin-right: $medium-measurements;
+      text-decoration: none;
+      font-weight: 100;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      &.active {
+        color: $important-text-color;
+      }
+      &:hover {
+        color: $important-text-color;
+      }
+    }
+  }
+  &-link-hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+    }
+    & a {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: $large-measurements;
+      text-decoration: none;
+      font-weight: 100;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      &.active {
+        color: $important-text-color;
+      }
+      &:hover {
+        color: $important-text-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-links {
+    visibility: hidden;
+  }
+  .hamburger-menu {
+    position: absolute;
+    left: 2vw;
+    top: 2.2vh;
+    height: 100%;
+    div {
+      width: 2rem;
+      height: 2.5px;
+      background-color: white;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.progressbar {
+  height: 1.5rem;
+  width: 80%;
+  background-color: $dark-bg-color;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: $small-measurements;
+  p {
+    color: white;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
+.filler {
+  margin-right: 0.7rem;
+  height: 30%;
+  width: 70%;
+  background-color: $light-bg-color;
+  border-radius: 10px;
+  margin-left: $xsmall-measurements;
+  transition: width 2s ease;
+}
+@media only screen and (max-width: 600px) {
+  .progressbar {
+    width: 95%;
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}
