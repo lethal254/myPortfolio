@@ -5,7 +5,12 @@
     align-items: center;
     justify-content: center;
     z-index: 3;
-    h1 {
+    margin: 1rem;
+    animation-name: slide-in-faded;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    &-header {
       font-size: $medium-measurements;
       margin-top: $xlarge-measurements;
       margin-bottom: $xsmall-measurements;

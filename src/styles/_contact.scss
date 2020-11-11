@@ -6,6 +6,10 @@
     justify-content: center;
     z-index: 3;
     height: 90vh;
+    animation-name: slide-in-faded;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 
     h1 {
       font-size: $medium-measurements;

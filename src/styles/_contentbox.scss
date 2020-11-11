@@ -1,61 +1,39 @@
 .content-box {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   &-content {
     position: relative;
     width: 100%;
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    &-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
+    height: 60vh;
+    &-image {
       width: 100%;
-      height: 100%;
-      background-color: rgb(250, 248, 248);
-      opacity: 0%;
-      transition: all 0.5s ease;
-      z-index: 1;
+      height: 50%;
+    }
+    &-typography {
+      width: 100%;
+      height: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      padding-bottom: $xlarge-measurements;
+      padding: 1rem;
+      text-align: center;
+      background-image: linear-gradient(
+        109.6deg,
+        rgba(121, 203, 202, 1) 11.2%,
+        rgba(119, 161, 211, 1) 91.1%
+      );
+      color: white;
       h1 {
+        margin-top: 0;
         font-size: 1rem;
       }
-
-      h1,
       h4 {
-        transform: translateY(-200%);
-        transition: all 0.5s;
+        margin: 0.2rem;
       }
-      h4 {
-        color: $important-text-color;
-      }
-      .button {
-        transform: translateY(200%);
-        transition: all 0.5s;
-      }
-      &:hover h1 {
-        transform: translateY(0);
-      }
-      &:hover h4 {
-        transform: translateY(0);
-      }
-      &:hover .button {
-        transform: translateY(0);
-      }
-    }
-    &-overlay:hover {
-      opacity: 100%;
     }
   }
 }

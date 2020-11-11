@@ -9,7 +9,8 @@ export default class ContentBox extends Component {
             imageLink: props.imageLink,
             bigTitle:props.bigTitle,
             smallTitle:props.smallTitle,
-            buttonText:props.buttonText
+            buttonText:props.buttonText,
+            description:props.description
         }
     }
     
@@ -24,13 +25,16 @@ export default class ContentBox extends Component {
 
         return (
             <div className="content-box" >
-            <div className="content-box-content" style={style}>
-            <div className="content-box-content-overlay">
-                <h1>{this.state.bigTitle}</h1>
-                <h4>{this.state.smallTitle}</h4>
-                <Button size="small" text={this.state.buttonText} color="pink"/>
-            </div>
-            </div>
+                <div className="content-box-content" >
+                    <div className="content-box-content-image" style={style}></div>
+                    <div className="content-box-content-typography">
+                        <h1 className="content-box--typography-header">{this.state.bigTitle}</h1>
+                        <h4>{this.state.smallTitle}</h4>
+                        <p>{this.state.description}</p>
+                        <Button size="xsmall" text={this.state.buttonText} color="white"/>
+                    </div>
+                
+                </div>
                 
             </div>
         )
