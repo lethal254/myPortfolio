@@ -1,4 +1,5 @@
 .contact-page {
+  height: 100vh;
   .contact-page-content {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,8 @@
       font-size: $medium-measurements;
       margin-top: $xlarge-measurements;
       margin-bottom: $small-measurements;
+      font-family: "Varela Round", sans-serif;
+      color: #63707e;
     }
     &-main {
       display: flex;

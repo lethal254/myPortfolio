@@ -1,0 +1,49 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.9)),
+    url("https://i.gifer.com/J4o.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //Mobile responsiveness
+
+  &-content {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+  h1 {
+    text-transform: uppercase;
+    .name {
+      color: $important-text-color;
+    }
+  }
+  h1,
+  h3 {
+    margin-bottom: $xsmall-measurements;
+  }
+  h3 {
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-content {
+    font-size: 1rem;
+  }
+}

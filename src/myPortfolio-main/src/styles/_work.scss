@@ -1,0 +1,31 @@
+.work-page {
+  .work-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    h1 {
+      font-size: $medium-measurements;
+      margin-top: $xlarge-measurements;
+      margin-bottom: $xsmall-measurements;
+    }
+    .underline {
+      width: $large-measurements;
+      height: 0.2rem;
+      background-color: black;
+    }
+    &-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      column-gap: 0.5rem;
+      row-gap: 1rem;
+      width: 100%;
+      height: 100%;
+      padding: $medium-measurements;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+}

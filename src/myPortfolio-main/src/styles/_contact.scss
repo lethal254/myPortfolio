@@ -1,0 +1,43 @@
+.contact-page {
+  .contact-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    height: 90vh;
+
+    h1 {
+      font-size: $medium-measurements;
+      margin-top: $xlarge-measurements;
+      margin-bottom: $small-measurements;
+    }
+    &-main {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 80%;
+      padding: $medium-measurements;
+      justify-content: center;
+      align-items: center;
+      :nth-child(1) {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: $dark-bg-color;
+        animation-name: fly;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.735, 0.43, 0.275, 0.76);
+      }
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: $important-text-color;
+      }
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+}

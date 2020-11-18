@@ -1,0 +1,11 @@
+.portfolio-list {
+  margin-top: 1rem;
+  &-item {
+    color: grey;
+    list-style-type: none;
+
+    .btn {
+      margin-right: 1rem;
+    }
+  }
+}

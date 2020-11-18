@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import SocialIcons from "../components/SocialIcons/SocialIcons"
+import SocialIcons from "../components/SocialIcons"
 
 export default function Contact() {
     return (

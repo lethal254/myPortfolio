@@ -1,0 +1,30 @@
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 10vw;
+  background: $dark-bg-color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &-links {
+    margin-top: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    & a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.5s ease;
+
+      &.active {
+        color: $important-text-color;
+      }
+      &:hover {
+        color: $important-text-color;
+      }
+    }
+  }
+}

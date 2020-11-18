@@ -1,0 +1,13 @@
+.blog-list {
+  margin-top: 1rem;
+  display: grid;
+  &-item {
+    color: grey;
+    list-style-type: none;
+    margin-top: 1rem;
+
+    .btn {
+      margin-right: 1rem;
+    }
+  }
+}

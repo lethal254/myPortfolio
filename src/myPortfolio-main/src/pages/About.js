@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/Navbar'
 import Progressbar from "../components/Progressbar/Progressbar"
+import SocialIcons from "../components/SocialIcons"
 
 
 export default function About() {

@@ -14,12 +14,10 @@
       font-size: $medium-measurements;
       margin-top: $xlarge-measurements;
       margin-bottom: $xsmall-measurements;
+      font-family: "Varela Round", sans-serif;
+      color: #63707e;
     }
-    .underline {
-      width: $large-measurements;
-      height: 0.2rem;
-      background-color: black;
-    }
+
     &-main {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

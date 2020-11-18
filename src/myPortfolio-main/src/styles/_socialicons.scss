@@ -1,0 +1,49 @@
+.social-icons {
+  &-large {
+    font-size: 2rem;
+    &-light {
+      a {
+        color: white;
+        margin-right: 1rem;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $important-text-color;
+        }
+      }
+    }
+    &-dark {
+      a {
+        color: black;
+        margin-right: 1rem;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $important-text-color;
+        }
+      }
+    }
+  }
+  &-small {
+    font-size: 1rem;
+    &-light {
+      a {
+        color: white;
+        margin-right: 1rem;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $important-text-color;
+        }
+      }
+    }
+    &-dark {
+      a {
+        color: black;
+        margin-right: 1rem;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $important-text-color;
+        }
+      }
+    }
+  }
+  margin-bottom: 0.5rem;
+}

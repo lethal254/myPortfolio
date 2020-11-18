@@ -45,10 +45,6 @@
     flex-direction: column;
     list-style-type: none;
     visibility: hidden;
-    animation-name: slide-in-top;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
     &.show {
       visibility: visible;
     }
@@ -84,13 +80,6 @@
       height: 2.5px;
       background-color: white;
       margin-bottom: 0.5rem;
-      transition: all 0.5s ease;
-    }
-    &:hover {
-      cursor: pointer;
-    }
-    &:hover div {
-      background-color: $important-text-color;
     }
   }
 }

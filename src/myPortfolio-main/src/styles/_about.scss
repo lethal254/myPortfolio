@@ -1,0 +1,73 @@
+.about-page {
+  .about-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    h1 {
+      font-size: $medium-measurements;
+      margin-top: $small-measurements;
+      margin-bottom: $xsmall-measurements;
+    }
+
+    &-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      width: 90%;
+      height: 75%;
+      padding: $medium-measurements;
+      align-items: center;
+
+      &__about-me {
+        margin-right: $small-measurements;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: $small-measurements;
+        .profile-picture {
+          width: 9rem;
+          height: 9rem;
+          background: url("https://images.unsplash.com/photo-1528475422887-f47817e10712?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          clip-path: polygon(
+            50% 0%,
+            90% 20%,
+            100% 60%,
+            75% 100%,
+            25% 100%,
+            0% 60%,
+            10% 20%
+          );
+        }
+        h4 {
+          font-size: $small-measurements;
+          margin-top: $small-measurements;
+          margin-bottom: $xsmall-measurements;
+          color: grey;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 0.8rem;
+          align-items: center;
+        }
+      }
+      &__skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h4 {
+          font-size: $small-measurements;
+          margin-top: $small-measurements;
+          margin-bottom: $xsmall-measurements;
+          color: grey;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
